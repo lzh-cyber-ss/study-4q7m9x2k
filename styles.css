@@ -65,6 +65,10 @@ button:disabled {
   gap: 16px;
 }
 
+.panel > * {
+  min-width: 0;
+}
+
 .topbar {
   padding: 4px 4px 0;
 }
