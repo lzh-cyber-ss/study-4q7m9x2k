@@ -43,6 +43,7 @@ const els = {
   doneCount: document.querySelector("#doneCount"),
   accuracy: document.querySelector("#accuracy"),
   wrongCount: document.querySelector("#wrongCount"),
+  quizBack: document.querySelector("#quizBackBtn"),
   prev: document.querySelector("#prevBtn"),
   next: document.querySelector("#nextBtn"),
   reset: document.querySelector("#resetBtn"),
@@ -60,6 +61,7 @@ const els = {
   backSubject: document.querySelector("#backSubjectBtn"),
   reviewPanel: document.querySelector("#reviewPanel"),
   reviewSummary: document.querySelector("#reviewSummary"),
+  reviewGrade: document.querySelector("#reviewGrade"),
   reviewNavigator: document.querySelector("#reviewNavigator"),
   reviewNavGrid: document.querySelector("#reviewNavGrid"),
   reviewNavTop: document.querySelector("#reviewNavTopBtn"),
@@ -563,6 +565,9 @@ function renderReview() {
   document.querySelector(".topbar .eyebrow").textContent = `${subjects[activeSubject].label} 演習問題`;
   els.reviewSummary.textContent =
     `全${stats.total}問・正解${stats.correct}問・不正解${stats.wrong}問・未回答${unanswered}問`;
+  const gradePercentage = stats.total ? Math.round((stats.correct / stats.total) * 100) : 0;
+  els.reviewGrade.textContent =
+    `評点 ${stats.correct.toFixed(2)} / ${stats.total.toFixed(2)} (${gradePercentage}%)`;
   els.reviewNavGrid.innerHTML = "";
   els.reviewQuestions.innerHTML = "";
 
@@ -738,6 +743,18 @@ function returnToStart() {
   renderQuestion();
 }
 
+function leaveCurrentRound() {
+  if (!session) return;
+  if (
+    answeredCount() > 0 &&
+    !confirm("このラウンドを終了して問題数選択に戻りますか？回答内容は消去されます。")
+  ) {
+    return;
+  }
+  returnToStart();
+}
+
+els.quizBack.addEventListener("click", leaveCurrentRound);
 els.prev.addEventListener("click", () => move(-1));
 els.next.addEventListener("click", () => {
   if (!isFinished() && currentIndex === flatQuestions.length - 1) {
