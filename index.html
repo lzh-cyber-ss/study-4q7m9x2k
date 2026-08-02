@@ -10,13 +10,16 @@
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="icon" href="./icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./icon.svg" />
-    <link rel="stylesheet" href="./styles.css?v=faithful56" />
+    <link rel="stylesheet" href="./styles.css?v=faithful57" />
   </head>
   <body>
     <main class="app">
       <section class="panel">
         <header class="topbar">
-          <p class="eyebrow">ソフトウェア 演習問題</p>
+          <div class="topbarLine">
+            <p class="eyebrow">ソフトウェア 演習問題</p>
+            <button id="quizBackBtn" class="quizBack quizOnly" type="button">← 戻る</button>
+          </div>
           <h1>演習問題トレーニング</h1>
         </header>
 
@@ -111,6 +114,7 @@
               <p class="eyebrow">提出済み</p>
               <h2>問題と解答</h2>
               <p id="reviewSummary" class="reviewSummary"></p>
+              <p id="reviewGrade" class="reviewGrade"></p>
             </div>
             <button id="reviewStartBtn" type="button">問題数選択に戻る</button>
           </div>
@@ -146,14 +150,14 @@
       </div>
     </dialog>
 
-    <script src="./data.js?v=faithful56"></script>
-    <script src="./hardware-data.js?v=faithful56"></script>
-    <script src="./security-data.js?v=faithful56"></script>
-    <script src="./moodle-security-data.js?v=faithful56"></script>
-    <script src="./app.js?v=faithful56"></script>
+    <script src="./data.js?v=faithful57"></script>
+    <script src="./hardware-data.js?v=faithful57"></script>
+    <script src="./security-data.js?v=faithful57"></script>
+    <script src="./moodle-security-data.js?v=faithful57"></script>
+    <script src="./app.js?v=faithful57"></script>
     <script>
       if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("./sw.js?v=faithful56").then((registration) => {
+        navigator.serviceWorker.register("./sw.js?v=faithful57").then((registration) => {
           registration.update();
         }).catch(() => {});
       }
