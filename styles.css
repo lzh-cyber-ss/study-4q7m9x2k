@@ -73,6 +73,18 @@ button:disabled {
   padding: 4px 4px 0;
 }
 
+.topbarLine {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.quizBack {
+  flex: 0 0 auto;
+  min-width: 88px;
+}
+
 .eyebrow {
   margin: 0 0 5px;
   color: var(--accent);
@@ -1229,6 +1241,14 @@ html[data-subject="security"] .subject[data-subject="security"] {
   margin: 10px 0 0;
   color: var(--muted);
   line-height: 1.6;
+}
+
+.reviewGrade {
+  margin: 6px 0 0;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.5;
 }
 
 .reviewQuestions {
