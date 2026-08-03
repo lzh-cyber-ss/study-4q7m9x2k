@@ -1707,19 +1707,23 @@ const softwareSvg = (label, body, viewBox = "0 0 700 280") => `
   </svg>`;
 
 attachFigure("システム構成要素その1", "問03", softwareSvg("情報処理システムの分類", `
-  <text class="stateText" x="20" y="32">情報処理システム</text>
-  <path class="stateArrowLine" d="M185 28 H245 M245 28 V218"></path>
-  <text class="stateText" x="260" y="32">集中処理システム</text>
-  <text class="stateText" x="260" y="82">分散処理システム</text>
-  <path class="stateArrowLine" d="M430 76 H470 M470 76 V218"></path>
-  <text class="stateText" x="485" y="82">水平分散システム</text>
-  <text class="stateText" x="515" y="126">水平機能分散システム</text>
-  <text class="stateText" x="515" y="166">水平負荷分散システム</text>
-  <text class="stateText" x="485" y="218">垂直分散システム</text>
-  <path class="stateArrowLine" d="M485 226 H500 M500 226 V270"></path>
-  <text class="stateText" x="515" y="246">垂直機能分散システム</text>
-  <text class="stateText" x="515" y="286">垂直負荷分散システム</text>
-`, "0 0 700 305"));
+  <text class="stateText" x="92" y="205">情報処理システム</text>
+  <path class="stateTreeLine" d="M185 205 H220 M220 78 V270 M220 78 H262 M220 270 H262"></path>
+  <text class="stateText" x="350" y="78">集中処理システム</text>
+  <text class="stateText" x="350" y="270">分散処理システム</text>
+
+  <path class="stateTreeLine" d="M440 270 H475 M475 150 V326 M475 150 H510 M475 326 H510"></path>
+  <text class="stateText" x="595" y="150">水平分散システム</text>
+  <text class="stateText" x="595" y="326">垂直分散システム</text>
+
+  <path class="stateTreeLine" d="M595 168 V224 M595 190 H620 M595 224 H620"></path>
+  <text class="stateTextSmall stateTextLeft" x="630" y="190">水平機能分散システム</text>
+  <text class="stateTextSmall stateTextLeft" x="630" y="224">水平負荷分散システム</text>
+
+  <path class="stateTreeLine" d="M595 344 V400 M595 366 H620 M595 400 H620"></path>
+  <text class="stateTextSmall stateTextLeft" x="630" y="366">垂直機能分散システム</text>
+  <text class="stateTextSmall stateTextLeft" x="630" y="400">垂直負荷分散システム</text>
+`, "0 0 825 425"));
 
 const directoryTreeFigure = softwareSvg("ディレクトリ構造", `
   <text class="stateText" x="326" y="26">ルート</text>
@@ -1751,11 +1755,11 @@ attachFigure("システム構成要素その2", "問09", `
     <path class="stateArrowLine" d="M55 130 H645"></path>
     <rect class="stateBox" x="290" y="22" width="120" height="48"></rect><text class="stateText" x="325" y="52">サーバ</text>
     <path class="stateArrowLine" d="M350 70 V130"></path>
-    <rect class="stateBox" x="65" y="155" width="105" height="48"></rect><text class="stateText" x="75" y="185">クライアント</text>
-    <rect class="stateBox" x="185" y="155" width="105" height="48"></rect><text class="stateText" x="195" y="185">クライアント</text>
-    <rect class="stateBox" x="305" y="155" width="105" height="48"></rect><text class="stateText" x="315" y="185">クライアント</text>
-    <rect class="stateBox" x="430" y="155" width="90" height="48"></rect><text class="stateText" x="447" y="185">プリンタ</text>
-    <rect class="stateBox" x="535" y="155" width="90" height="48"></rect><text class="stateText" x="552" y="185">プリンタ</text>
+    <rect class="stateBox" x="65" y="155" width="105" height="48"></rect><text class="stateTextSmall" x="117.5" y="179">クライアント</text>
+    <rect class="stateBox" x="185" y="155" width="105" height="48"></rect><text class="stateTextSmall" x="237.5" y="179">クライアント</text>
+    <rect class="stateBox" x="305" y="155" width="105" height="48"></rect><text class="stateTextSmall" x="357.5" y="179">クライアント</text>
+    <rect class="stateBox" x="430" y="155" width="90" height="48"></rect><text class="stateTextSmall" x="475" y="179">プリンタ</text>
+    <rect class="stateBox" x="535" y="155" width="90" height="48"></rect><text class="stateTextSmall" x="580" y="179">プリンタ</text>
     <path class="stateArrowLine" d="M118 130 V155 M238 130 V155 M358 130 V155 M475 130 V155 M580 130 V155"></path>
   `, "0 0 700 225")}
   <table class="dataTable">
@@ -1808,9 +1812,9 @@ attachFigure("稼働率・性能計算", "問37", `
 
 attachFigure("稼働率・性能計算", "問39", softwareSvg("装置A・Cの並列部と装置B", `
   <path class="stateArrowLine" d="M50 140 H105 M105 140 V65 M105 140 V215 M365 65 V215 M365 140 H445 M585 140 H650"></path>
-  <rect class="stateBox" x="125" y="38" width="220" height="54"></rect><text class="stateText" x="190" y="72">装置A（0.7）</text>
-  <rect class="stateBox" x="125" y="188" width="220" height="54"></rect><text class="stateText" x="190" y="222">装置C（0.8）</text>
-  <rect class="stateBox" x="445" y="112" width="140" height="56"></rect><text class="stateText" x="462" y="147">装置B（0.9）</text>
+  <rect class="stateBox" x="125" y="38" width="220" height="54"></rect><text class="stateText" x="235" y="65">装置A（0.7）</text>
+  <rect class="stateBox" x="125" y="188" width="220" height="54"></rect><text class="stateText" x="235" y="215">装置C（0.8）</text>
+  <rect class="stateBox" x="445" y="112" width="140" height="56"></rect><text class="stateTextSmall" x="515" y="140">装置B（0.9）</text>
 `));
 
 attachFigure("稼働率・性能計算", "問40", softwareSvg("東京・大阪・金沢の回線構成", `

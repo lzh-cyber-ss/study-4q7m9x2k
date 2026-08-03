@@ -497,6 +497,25 @@ html[data-subject="security"] .subject[data-subject="security"] {
   dominant-baseline: middle;
 }
 
+.stateSvg .stateTextSmall {
+  fill: var(--quiz-ink);
+  font-size: 17px;
+  font-weight: 650;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.stateSvg .stateTextLeft {
+  text-anchor: start;
+}
+
+.stateSvg .stateTreeLine {
+  fill: none;
+  stroke: #263238;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
 .stateSvg .stateArrowLine {
   fill: none;
   stroke: #263238;
