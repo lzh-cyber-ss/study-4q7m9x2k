@@ -18,7 +18,21 @@ const ASSETS = [
   "./assets/security/security-10-q04-1.png",
   "./assets/security/security-10-q07-1.png",
   "./assets/security/security-16-q02-1.png",
-  "./assets/security/security-17-q01-1.png"
+  "./assets/security/security-17-q01-1.png",
+  "./assets/hardware/figure-01.png",
+  "./assets/hardware/figure-02.png",
+  "./assets/hardware/figure-03.png",
+  "./assets/hardware/figure-04.png",
+  "./assets/hardware/figure-05.png",
+  "./assets/hardware/figure-06.png",
+  "./assets/hardware/figure-07.png",
+  "./assets/hardware/figure-08.png",
+  "./assets/hardware/figure-09.png",
+  "./assets/hardware/figure-10.png",
+  "./assets/hardware/figure-11.png",
+  "./assets/hardware/figure-12.png",
+  "./assets/hardware/figure-13.png",
+  "./assets/hardware/figure-14.png"
 ];
 
 self.addEventListener("install", (event) => {
