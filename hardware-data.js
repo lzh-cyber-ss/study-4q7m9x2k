@@ -2895,6 +2895,124 @@ window.HARDWARE_QUIZ_DATA = [
           }
         ],
         "text": "H.264/MPEG-4 AVCに関する記述はどれか。"
+      },
+      {
+        "no": "問126",
+        "answer": "ウ",
+        "choices": [
+          {
+            "key": "ア",
+            "text": "OR回路"
+          },
+          {
+            "key": "イ",
+            "text": "AND回路"
+          },
+          {
+            "key": "ウ",
+            "text": "XOR回路"
+          },
+          {
+            "key": "エ",
+            "text": "NOR回路"
+          }
+        ],
+        "text": "図の論理回路と等価な回路はどれか。",
+        "figure": "<div class=\"securityFigure\"><img src=\"assets/hardware/figure-15.png\" alt=\"問題の論理回路\" loading=\"lazy\"><div class=\"imageChoiceGrid\"><div><b>ア</b><img src=\"assets/hardware/figure-16.png\" alt=\"選択肢アの論理回路\" loading=\"lazy\"></div><div><b>イ</b><img src=\"assets/hardware/figure-17.png\" alt=\"選択肢イの論理回路\" loading=\"lazy\"></div><div><b>ウ</b><img src=\"assets/hardware/figure-18.png\" alt=\"選択肢ウの論理回路\" loading=\"lazy\"></div><div><b>エ</b><img src=\"assets/hardware/figure-19.png\" alt=\"選択肢エの論理回路\" loading=\"lazy\"></div></div></div>"
+      },
+      {
+        "no": "問127",
+        "answer": "イ",
+        "choices": [
+          {
+            "key": "ア",
+            "text": "AND回路"
+          },
+          {
+            "key": "イ",
+            "text": "NAND回路"
+          },
+          {
+            "key": "ウ",
+            "text": "OR回路"
+          },
+          {
+            "key": "エ",
+            "text": "NOR回路"
+          }
+        ],
+        "text": "次の論理式と同じ結果が得られる論理回路はどれか。",
+        "figure": "<div class=\"securityFigure\"><img src=\"assets/hardware/figure-20.png\" alt=\"問題の論理式\" loading=\"lazy\"><div class=\"imageChoiceGrid\"><div><b>ア</b><img src=\"assets/hardware/figure-21.png\" alt=\"選択肢アの論理回路\" loading=\"lazy\"></div><div><b>イ</b><img src=\"assets/hardware/figure-22.png\" alt=\"選択肢イの論理回路\" loading=\"lazy\"></div><div><b>ウ</b><img src=\"assets/hardware/figure-23.png\" alt=\"選択肢ウの論理回路\" loading=\"lazy\"></div><div><b>エ</b><img src=\"assets/hardware/figure-24.png\" alt=\"選択肢エの論理回路\" loading=\"lazy\"></div></div></div>"
+      },
+      {
+        "no": "問128",
+        "answer": "イ",
+        "choices": [
+          {
+            "key": "ア",
+            "text": "AND回路"
+          },
+          {
+            "key": "イ",
+            "text": "NAND回路"
+          },
+          {
+            "key": "ウ",
+            "text": "OR回路"
+          },
+          {
+            "key": "エ",
+            "text": "XOR回路"
+          }
+        ],
+        "text": "二つの入力と一つの出力をもつ論理回路で，二つの入力A，Bがともに1のときだけ，出力Xが0になるものはどれか。"
+      },
+      {
+        "no": "問129",
+        "answer": "イ",
+        "choices": [
+          {
+            "key": "ア",
+            "text": "X・Y"
+          },
+          {
+            "key": "イ",
+            "text": "X＋Y"
+          },
+          {
+            "key": "ウ",
+            "text": "¬(X・Y)"
+          },
+          {
+            "key": "エ",
+            "text": "¬(X＋Y)"
+          }
+        ],
+        "text": "NAND素子を用いた次の組合せ回路の出力Zを表す式はどれか。",
+        "figure": "<div class=\"securityFigure\"><img src=\"assets/hardware/figure-25.png\" alt=\"問題文の論理記号の説明\" loading=\"lazy\"><img src=\"assets/hardware/figure-26.png\" alt=\"NAND素子を用いた組合せ回路\" loading=\"lazy\"></div>"
+      },
+      {
+        "no": "問130",
+        "answer": "エ",
+        "choices": [
+          {
+            "key": "ア",
+            "text": "AND"
+          },
+          {
+            "key": "イ",
+            "text": "NAND"
+          },
+          {
+            "key": "ウ",
+            "text": "NOR"
+          },
+          {
+            "key": "エ",
+            "text": "XOR"
+          }
+        ],
+        "text": "次の条件を満足する論理回路はどれか。［条件］階段の上下にあるスイッチA，Bで，一つの照明を点灯，消灯する。すなわち，一方のスイッチの状態にかかわらず，他方のスイッチで照明を点灯，消灯できる。また，一方で点灯した照明を他方で消灯できる。"
       }
     ]
   }

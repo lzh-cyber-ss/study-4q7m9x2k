@@ -1,13 +1,13 @@
-const CACHE_NAME = "software-quiz-faithful62";
+const CACHE_NAME = "software-quiz-faithful63";
 const ASSETS = [
   "./",
-  "./index.html?v=faithful62",
-  "./styles.css?v=faithful62",
-  "./data.js?v=faithful62",
-  "./hardware-data.js?v=faithful62",
-  "./security-data.js?v=faithful62",
-  "./moodle-security-data.js?v=faithful62",
-  "./app.js?v=faithful62",
+  "./index.html?v=faithful63",
+  "./styles.css?v=faithful63",
+  "./data.js?v=faithful63",
+  "./hardware-data.js?v=faithful63",
+  "./security-data.js?v=faithful63",
+  "./moodle-security-data.js?v=faithful63",
+  "./app.js?v=faithful63",
   "./manifest.webmanifest",
   "./icon.svg",
   "./assets/security/security-02-q03-1.png",
@@ -32,7 +32,19 @@ const ASSETS = [
   "./assets/hardware/figure-11.png",
   "./assets/hardware/figure-12.png",
   "./assets/hardware/figure-13.png",
-  "./assets/hardware/figure-14.png"
+  "./assets/hardware/figure-14.png",
+  "./assets/hardware/figure-15.png",
+  "./assets/hardware/figure-16.png",
+  "./assets/hardware/figure-17.png",
+  "./assets/hardware/figure-18.png",
+  "./assets/hardware/figure-19.png",
+  "./assets/hardware/figure-20.png",
+  "./assets/hardware/figure-21.png",
+  "./assets/hardware/figure-22.png",
+  "./assets/hardware/figure-23.png",
+  "./assets/hardware/figure-24.png",
+  "./assets/hardware/figure-25.png",
+  "./assets/hardware/figure-26.png"
 ];
 
 self.addEventListener("install", (event) => {
