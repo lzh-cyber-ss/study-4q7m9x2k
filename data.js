@@ -1700,11 +1700,186 @@ window.QUIZ_DATA.push({
   ]
 });
 
+// 2026-08-05 写真追加分。
+window.QUIZ_DATA.push({
+  paper: "システム構成要素その3",
+  questions: [
+    {
+      no: "問01",
+      text: "RAID 1〜5の各構成は，何に基づいて区別されるか。",
+      choices: normalizeChoices([
+        "構成する磁気ディスク装置のアクセス性能",
+        "コンピュータ本体とのインタフェースの違い",
+        "データ及び冗長ビットの記録方法と記録位置の組合せ",
+        "保証する信頼性のMTBF値"
+      ]),
+      answer: "ウ"
+    },
+    {
+      no: "問02",
+      text: "RAIDに関する記述のうち，適切なものはどれか。",
+      choices: normalizeChoices([
+        "1台のディスク装置で，ソフトウェアによって，磁気ディスクの信頼性の向上を図っている。",
+        "ストライピングの技術を利用して，アクセスの高速化を図っている。",
+        "ディスクキャッシュの技術を利用して，磁気ディスクの信頼性の向上を図っている。",
+        "ミラーリングの技術を利用して，アクセスの高速化を図っている。"
+      ]),
+      answer: "イ"
+    },
+    {
+      no: "問03",
+      text: "RAID 0の説明として，適切なものはどれか。",
+      choices: normalizeChoices([
+        "高価ではあるが信頼性の高い磁気ディスクを複数台制御し，主として大容量化を目指している。",
+        "細分化したデータを複数の磁気ディスクに巡回的に並列入出力することによって，転送速度の向上を図っている。",
+        "冗長な磁気ディスクを必要とせず，各ブロックごとにCRCによるエラー訂正を行っている。",
+        "廉価な複数の磁気ディスクで構成し，OSによる制御で信頼性と高性能化を図っている。"
+      ]),
+      answer: "イ"
+    },
+    {
+      no: "問04",
+      text: "図に示すように，データを細分化して複数台の磁気ディスクに格納することを何と呼ぶか。ここで，b0〜b15はデータがビットごとにデータディスクに格納されている順番を示す。また，p0〜p3は障害ディスクを特定するためのパリティを表す。",
+      choices: normalizeChoices(["ストライピング", "ディスクキャッシュ", "ブロック化", "ミラーリング"]),
+      answer: "ア"
+    },
+    {
+      no: "問05",
+      text: "ホストコンピュータを2台用意しておき，本番系が故障したときは，本番系と同一のオンライン処理プログラムをあらかじめ起動して待機している予備系のコンピュータに速やかに切り替えて，処理を続行するシステムはどれか。",
+      choices: normalizeChoices(["コールドスタンバイシステム", "デュアルシステム", "ホットスタンバイシステム", "マルチプロセッサシステム"]),
+      answer: "ウ"
+    },
+    {
+      no: "問06",
+      text: "デュアルシステムに関する説明として，適切なものはどれか。",
+      choices: normalizeChoices([
+        "同じ処理を行うシステムを二重に用意し，それぞれの処理結果を照合することで処理の正しさを確認する。どちらかのシステムに障害が発生した場合は，他方だけの縮退運転によって処理を継続する。",
+        "オンライン処理を行う現用系のシステムと，バッチ処理などを行いながら待機させる待機系を用意し，現用系に障害が発生した場合は，待機系にオンライン処理プログラムをロードし直した上でシステムを切り替え，オンライン処理を再起動する。",
+        "待機系のシステムに現用系のオンライン処理プログラムをロードして待機させておき，現用系に障害が発生した場合は，待機系に即時切り替えて処理を続行する。",
+        "コンピュータ装置に，プロセッサ，メモリ，チャネル，電源系などを二重に用意しておき，それぞれの装置で片方に障害が発生した場合でも，処理を継続する。"
+      ]),
+      answer: "ア"
+    },
+    {
+      no: "問07",
+      text: "一方のコンピュータが正常に機能しているときには，他方のコンピュータが待機状態にあるシステムはどれか。",
+      choices: normalizeChoices(["デュアルシステム", "デュプレックスシステム", "マルチプロセッシングシステム", "ロードシェアシステム"]),
+      answer: "イ"
+    },
+    {
+      no: "問08",
+      text: "工作機械をマイクロコンピュータで制御するときの処置のうち，フェールセーフを考慮したものはどれか。",
+      choices: normalizeChoices([
+        "異常動作の信号を検知したときは，自動的に停止するようにした。",
+        "機能ごとの部品を交換しやすくして，修復時間を極力短くした。",
+        "部品の一部が故障しても，できるだけ停止しないで処理を続けるようにした。",
+        "万一に備えて，メーカの保守担当部門とホットラインを設けた。"
+      ]),
+      answer: "ア"
+    },
+    {
+      no: "問09",
+      text: "図に示すように，2系統のシステムで構成され，一方は現用系としてオンライン処理を行い，もう一方は待機系として現用系の故障に備えている。通常，待機系はバッチ処理を行っている。このようなシステム構成を何と呼ぶか。",
+      choices: normalizeChoices(["シンプレックスシステム", "デュアルシステム", "デュプレックスシステム", "パラレルプロセッサシステム"]),
+      answer: "ウ"
+    },
+    {
+      no: "問10",
+      text: "ホットスタンバイ方式に関する記述のうち，適切なものはどれか。",
+      choices: normalizeChoices([
+        "待機系は，現用系が動作しているかどうかを監視していて，現用系のダウンを検出すると現用系が行っていた処理を直ちに引き継ぐ。",
+        "待機系は，現用系に入力されるジョブを監視していて，処理量の大きいジョブが入力されると現用系に代わってこれを実行する。",
+        "待機系は，現用系の負荷状態を監視していて，現用系のオーバロードを検出するとオーバロードした分の処理を引き受けて実行する。",
+        "待機系も現用系と同時に同じ処理を実行していて，現用系がダウンしても待機系が処理を完了する。"
+      ]),
+      answer: "ア"
+    },
+    {
+      no: "問11",
+      text: "システムの信頼性設計のうち，フールプルーフを採用した設計はどれか。",
+      choices: normalizeChoices([
+        "オペレータが不注意による操作誤りを起こさないように，操作の確認などに配慮した設計",
+        "システムの一部に異常や故障が発生したとき，その影響が小さくなるような設計",
+        "障害の発生を予防できるように，機器の定期保守を組み入れた運用システムの設計",
+        "装置を二重化し，一方が故障してもその装置を切り離してシステムの運用を継続できる設計"
+      ]),
+      answer: "ア"
+    },
+    {
+      no: "問12",
+      text: "信頼性設計におけるフェールソフトの例として，適切なものはどれか。",
+      choices: normalizeChoices([
+        "アプリケーションを間違って終了してもデータを失わないように，アプリケーション側の機能で編集中のデータのコピーを常に記憶媒体に保存する。",
+        "一部機能の障害によってシステムが停止しないよう，ハードウェアやソフトウェアを十分に検証し，信頼性の高いものだけでシステムを構成する。",
+        "クラスタ構成のシステムにおいて，あるサーバが動作しなくなった場合でも，他のサーバでアプリケーションを引き継いで機能を提供する。",
+        "電子メールでの返信が必要とされる受付システムの入力画面で，メールアドレスの入力フィールドを二つ設けて，同一かどうかをチェックする。"
+      ]),
+      answer: "ウ"
+    }
+  ]
+});
+
 const softwareSvg = (label, body, viewBox = "0 0 700 280") => `
   <p class="figureTitle">${label}</p>
   <svg class="stateSvg" viewBox="${viewBox}" role="img" aria-label="${label}">
     ${body}
   </svg>`;
+
+attachFigure("システム構成要素その3", "問04", softwareSvg("RAIDのデータ配置", `
+  <rect class="stateBox" x="35" y="18" width="630" height="44"></rect>
+  <text class="stateText" x="350" y="40">制御装置</text>
+  <path class="stateTreeLine" d="M105 62 V92 M235 62 V92 M365 62 V92 M495 62 V92 M625 62 V92"></path>
+
+  <g class="stateTextSmall">
+    <rect class="stateBox" x="55" y="92" width="100" height="156"></rect>
+    <path class="stateTreeLine" d="M55 131 H155 M55 170 H155 M55 209 H155"></path>
+    <text x="105" y="112">b0</text><text x="105" y="151">b4</text><text x="105" y="190">b8</text><text x="105" y="229">b12</text>
+
+    <rect class="stateBox" x="185" y="92" width="100" height="156"></rect>
+    <path class="stateTreeLine" d="M185 131 H285 M185 170 H285 M185 209 H285"></path>
+    <text x="235" y="112">b1</text><text x="235" y="151">b5</text><text x="235" y="190">b9</text><text x="235" y="229">b13</text>
+
+    <rect class="stateBox" x="315" y="92" width="100" height="156"></rect>
+    <path class="stateTreeLine" d="M315 131 H415 M315 170 H415 M315 209 H415"></path>
+    <text x="365" y="112">b2</text><text x="365" y="151">b6</text><text x="365" y="190">b10</text><text x="365" y="229">b14</text>
+
+    <rect class="stateBox" x="445" y="92" width="100" height="156"></rect>
+    <path class="stateTreeLine" d="M445 131 H545 M445 170 H545 M445 209 H545"></path>
+    <text x="495" y="112">b3</text><text x="495" y="151">b7</text><text x="495" y="190">b11</text><text x="495" y="229">b15</text>
+
+    <rect class="stateBox" x="575" y="92" width="100" height="156"></rect>
+    <path class="stateTreeLine" d="M575 131 H675 M575 170 H675 M575 209 H675"></path>
+    <text x="625" y="112">p0</text><text x="625" y="151">p1</text><text x="625" y="190">p2</text><text x="625" y="229">p3</text>
+  </g>
+  <g class="stateTextSmall">
+    <text x="105" y="270">データ</text><text x="105" y="290">ディスク1</text>
+    <text x="235" y="270">データ</text><text x="235" y="290">ディスク2</text>
+    <text x="365" y="270">データ</text><text x="365" y="290">ディスク3</text>
+    <text x="495" y="270">データ</text><text x="495" y="290">ディスク4</text>
+    <text x="625" y="270">パリティ</text><text x="625" y="290">ディスク</text>
+  </g>
+`, "0 0 710 310"));
+
+attachFigure("システム構成要素その3", "問09", softwareSvg("現用系と待機系の構成", `
+  <path class="stateTreeLine" d="M20 140 H85 M135 140 H170"></path>
+  <rect class="stateBox" x="85" y="100" width="50" height="80"></rect>
+  <text class="stateTextSmall" x="110" y="140" transform="rotate(-90 110 140)">演算制御装置</text>
+
+  <rect class="stateBox" x="170" y="100" width="50" height="80"></rect>
+  <text class="stateTextSmall" x="195" y="140" transform="rotate(-90 195 140)">切替装置</text>
+  <path class="stateTreeLine" d="M220 140 L280 65 M220 140 L280 215"></path>
+
+  <rect class="stateBox" x="280" y="35" width="100" height="60"></rect><text class="stateText" x="330" y="65">CPU</text>
+  <rect class="stateBox" x="280" y="185" width="100" height="60"></rect><text class="stateText" x="330" y="215">CPU</text>
+  <path class="stateTreeLine" d="M380 65 H415 V140 H440 M380 215 H415 V140"></path>
+
+  <rect class="stateBox" x="440" y="100" width="50" height="80"></rect>
+  <text class="stateTextSmall" x="465" y="140" transform="rotate(-90 465 140)">切替装置</text>
+  <path class="stateTreeLine" d="M490 140 H515 V65 H535 M515 140 V215 H535"></path>
+
+  <rect class="stateBox" x="535" y="35" width="155" height="60"></rect><text class="stateTextSmall" x="612.5" y="65">現用系周辺装置</text>
+  <rect class="stateBox" x="535" y="185" width="155" height="60"></rect><text class="stateTextSmall" x="612.5" y="215">待機系周辺装置</text>
+`, "0 0 710 280"));
 
 attachFigure("システム構成要素その1", "問03", softwareSvg("情報処理システムの分類", `
   <text class="stateText" x="92" y="205">情報処理システム</text>
