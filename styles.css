@@ -509,6 +509,13 @@ html[data-subject="security"] .subject[data-subject="security"] {
   text-anchor: start;
 }
 
+.stateSvg .stateTextVertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-anchor: start;
+  dominant-baseline: central;
+}
+
 .stateSvg .stateTreeLine {
   fill: none;
   stroke: #263238;

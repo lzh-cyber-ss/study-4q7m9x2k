@@ -1861,12 +1861,12 @@ attachFigure("システム構成要素その3", "問04", softwareSvg("RAIDのデ
 `, "0 0 710 310"));
 
 attachFigure("システム構成要素その3", "問09", softwareSvg("現用系と待機系の構成", `
-  <path class="stateTreeLine" d="M20 140 H85 M135 140 H170"></path>
-  <rect class="stateBox" x="85" y="100" width="50" height="80"></rect>
-  <text class="stateTextSmall" x="110" y="140" transform="rotate(-90 110 140)">演算制御装置</text>
+  <path class="stateTreeLine" d="M20 85 H85 M20 140 H85 M20 195 H85 M141 140 H170"></path>
+  <rect class="stateBox" x="85" y="65" width="56" height="150"></rect>
+  <text class="stateTextSmall stateTextVertical" x="113" y="72">端末通信制御装置</text>
 
   <rect class="stateBox" x="170" y="100" width="50" height="80"></rect>
-  <text class="stateTextSmall" x="195" y="140" transform="rotate(-90 195 140)">切替装置</text>
+  <text class="stateTextSmall stateTextVertical" x="195" y="106">切替装置</text>
   <path class="stateTreeLine" d="M220 140 L280 65 M220 140 L280 215"></path>
 
   <rect class="stateBox" x="280" y="35" width="100" height="60"></rect><text class="stateText" x="330" y="65">CPU</text>
@@ -1874,7 +1874,7 @@ attachFigure("システム構成要素その3", "問09", softwareSvg("現用系�
   <path class="stateTreeLine" d="M380 65 H415 V140 H440 M380 215 H415 V140"></path>
 
   <rect class="stateBox" x="440" y="100" width="50" height="80"></rect>
-  <text class="stateTextSmall" x="465" y="140" transform="rotate(-90 465 140)">切替装置</text>
+  <text class="stateTextSmall stateTextVertical" x="465" y="106">切替装置</text>
   <path class="stateTreeLine" d="M490 140 H515 V65 H535 M515 140 V215 H535"></path>
 
   <rect class="stateBox" x="535" y="35" width="155" height="60"></rect><text class="stateTextSmall" x="612.5" y="65">現用系周辺装置</text>
